@@ -1,0 +1,214 @@
+// @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+//   @font-face {
+//     font-family: '#{$font-family}';
+//     src: url(font-path('#{$font-filename}.eot'));
+//     src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+//     url(font-path('#{$font-filename}.woff')) format('woff'),
+//     url(font-path('#{$font-filename}.ttf')) format('truetype'),
+//     url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+//     font-weight: $font-weight;
+//     font-style: $font-style;
+//     font-stretch: $font-stretch;
+//   }
+// }
+
+// @include declare-font-face('Graphik Light', '../fonts/Graphik-Light-Web', 200);
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/Graphik-Light-Web.eot');
+  src: url('../fonts/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/Graphik-Light-Web.woff') format('woff'),
+     url('../fonts/Graphik-Light-Web.ttf') format('truetype'),
+     url('../fonts/Graphik-Light-Web.svg#Graphik-Light') format('svg');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Light-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../fonts/Graphik-LightItalic-Web.eot');
+  src: url('../fonts/Graphik-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/Graphik-LightItalic-Web.woff') format('woff'),
+     url('../fonts/Graphik-LightItalic-Web.ttf') format('truetype'),
+     url('../fonts/Graphik-LightItalic-Web.svg#Graphik-LightItalic') format('svg');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-LightItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Marian Text 1800 Web';
+  src: url('../fonts/MarianText-1800Roman-Web.eot');
+  src: url('../fonts/MarianText-1800Roman-Web.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/MarianText-1800Roman-Web.woff') format('woff'),
+     url('../fonts/MarianText-1800Roman-Web.ttf') format('truetype'),
+     url('../fonts/MarianText-1800Roman-Web.svg#MarianText-1800Roman') format('svg');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.MarianText-1800Roman-Web {
+  font-family: 'Marian Text 1800 Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Marian Text 1800 Web';
+  src: url('../fonts/MarianText-1800Italic-Web.eot');
+  src: url('../fonts/MarianText-1800Italic-Web.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/MarianText-1800Italic-Web.woff') format('woff'),
+     url('../fonts/MarianText-1800Italic-Web.ttf') format('truetype'),
+     url('../fonts/MarianText-1800Italic-Web.svg#MarianText-1800Italic') format('svg');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.MarianText-1800Italic-Web {
+  font-family: 'Marian Text 1800 Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+
+// bower:scss
+// endbower
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+    outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+    height:100%;
+}
+
+html { 
+  background: url(../images/hn-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body {
+  display: table;
+  width: 100%;
+  font-family: 'Graphik Web';
+  line-height: 1.5;
+  color: #808184;
+}
+
+.hero-unit {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 3%;
+}
+
+h1 {
+  font-size: 2em;
+
+  @media (min-width: 400px){
+    font-size: 3em;
+  }
+  @media (min-width: 768px){
+    font-size: 4em;
+  }
+
+  span {
+    color: #E8003D;
+  }
+}
+
+span {
+  font-weight: bold;
+  
+}
+
+p {
+  font-family: 'Marian Text 1800 Web';
+  font-size: 1.5em;
+  line-height: 2;
+  @media (min-width: 400px){
+    font-size: 1.75em;
+  }
+  @media (min-width: 768px){
+    font-size: 2em;
+  }
+}
+
+img {
+  width: 100px;
+}
