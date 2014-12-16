@@ -152,34 +152,6 @@ body {
   color: #808184;
 }
 
-.left,
-.right,
-.top,
-.bottom {
-  position: absolute;
-  background: #E8003D;
-}
-
-.left,
-.right {
-  top: 0;
-  bottom: 0;
-  width: 5px;
-}
-
-.left {left: 0;}
-.right {right: 0;}
-
-.top,
-.bottom {
-  left: 0;
-  height: 5px;
-  width: 100%;
-}
-.bottom {bottom: 0;}
-.top {top: 0;}
-
-
 .hero-unit {
   display: table-cell;
   vertical-align: middle;
@@ -201,6 +173,7 @@ p {
 
 p + p {
   font-variant: small-caps;
+  color: #E8003D;
 }
 
 img {
